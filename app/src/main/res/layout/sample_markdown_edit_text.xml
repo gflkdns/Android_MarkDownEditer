@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.text.markdownedit.MarkdownEditText
+        android:id="@+id/makedown"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/horizontalScrollView"
+        android:layout_alignParentStart="true"
+        android:background="#ffffff" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="#eeeeee"
+            android:gravity="center_vertical">
+
+            <ImageButton
+                android:id="@+id/ib_camera"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:onClick="onclick"
+                android:src="@drawable/ic_camera" />
+
+            <ImageButton
+                android:id="@+id/ib_link"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:onClick="onclick"
+                android:src="@drawable/ic_link" />
+
+            <ImageButton
+                android:id="@+id/ib_list"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:onClick="onclick"
+                android:src="@drawable/ic_list" />
+
+            <ImageButton
+                android:id="@+id/ib_table"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:onClick="onclick"
+                android:src="@drawable/ic_table" />
+
+            <ImageButton
+                android:id="@+id/ib_pic"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:onClick="onclick"
+                android:src="@drawable/ic_pic" />
+
+            <ImageButton
+                android:id="@+id/ib_header"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:onClick="onclick"
+                android:src="@drawable/ic_format_header_pound" />
+
+            <ImageButton
+                android:id="@+id/ib_ruler"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:onClick="onclick"
+                android:src="@drawable/ic_ruler" />
+
+            <ImageButton
+                android:id="@+id/ib_b"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:onClick="onclick"
+                android:src="@drawable/ic_b" />
+
+            <ImageButton
+                android:id="@+id/ib_blockquote"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:onClick="onclick"
+                android:src="@drawable/ic_blockquote" />
+
+            <ImageButton
+                android:id="@+id/ib_code"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:onClick="onclick"
+                android:src="@drawable/ic_code" />
+        </LinearLayout>
+    </HorizontalScrollView>
+</RelativeLayout>
